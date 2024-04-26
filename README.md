@@ -1,30 +1,35 @@
 # Playwright test automation project
 
-UI/API/Integration automation tests using Playwright framework
+UI/API/Integration automation tests based on specification
 
 ## Test application
 
 GAD🦎 - Application for learning testing GUI and API
 (https://github.com/jaktestowac/gad-gui-api-demo)
 
-### Tests objectives
+### Functionality
 
-- e2e - UI and API
-- integration
+- GUI
+- API
+- Tools
 
-### Framework
+## Framework
 
 - Playwright
-
-### Technologies
-
-- Node.js
-- TypeScript
+- Documentation
+- Scripts
 
 ### Tools
 
+- VS Code
+- Node.js
+- GIT
+
+### Static code analysis
+
 - Prettier
 - ESLint
+- Husky
 
 ## Prepare
 
