@@ -4,7 +4,7 @@ import { HomePage } from '../../src/pages/home.page';
 import { expect, test } from '@playwright/test';
 
 test.describe('Verify service main pages', () => {
-  test('Home page title', async ({ page }) => {
+  test('Home page title @GAD-R01-01', async ({ page }) => {
     //Arrange
     const homePage = new HomePage(page);
 
@@ -17,7 +17,7 @@ test.describe('Verify service main pages', () => {
     expect(title).toContain('GAD');
   });
 
-  test('Articles page title', async ({ page }) => {
+  test('Articles page title @GAD-R01-02', async ({ page }) => {
     //Arrange
     const articlesPage = new ArticlesPage(page);
 
@@ -29,7 +29,7 @@ test.describe('Verify service main pages', () => {
     expect(title).toContain('Articles');
   });
 
-  test('Comments page title', async ({ page }) => {
+  test('Comments page title @GAD-R01-02', async ({ page }) => {
     //Arrange
     const commentsPage = new CommentsPage(page);
 
