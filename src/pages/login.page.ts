@@ -15,7 +15,7 @@ export class LoginPage extends BasePage {
 
   async login(email: string, password: string): Promise<void> {
     await this.userEmailInput.fill(email);
-    await this.userEmailInput.fill(password);
+    await this.userPasswordInput.fill(password);
     await this.loginButton.click();
   }
 }
