@@ -1,6 +1,6 @@
-import { LoginPage } from '../../src/pages/login.page';
-import { RegisterPage } from '../../src/pages/register.page';
-import { WelcomePage } from '../../src/pages/welcome.page';
+import { LoginPage } from '../src/pages/login.page';
+import { RegisterPage } from '../src/pages/register.page';
+import { WelcomePage } from '../src/pages/welcome.page';
 import test, { expect } from '@playwright/test';
 
 test.describe('Verify register', () => {
