@@ -76,4 +76,18 @@ test.describe('Verify articles', () => {
     // Assert
     await expect(addArticleView.alertPopup).toHaveText(expectedErrorMessage);
   });
+
+  test('create article with title with 128 signs @GAD-R04-02', async ({
+    page,
+  }) => {
+    // Arrange
+    const articlePage = new ArticlePage(page);
+    const articleData = randomNewArticle(128);
+
+    // Act
+    await addArticleView.createArticle(articleData);
+
+    // Assert
+    await expect.soft(articlePage.articleTitle).toHaveText(articleData.title);
+  });
 });
